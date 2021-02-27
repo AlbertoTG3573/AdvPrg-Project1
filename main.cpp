@@ -1,7 +1,7 @@
 #include <iostream>
 #include "PGM.h"
 using namespace std;
-
+// Group: Alberto & Emma
 int main()
 {
     // Path to the file
