@@ -1,7 +1,35 @@
-//
-// Created by rmb35 on 2/21/2021.
-//
-
 #include "ImageProcessing.h"
 
-//hello//
+//copy image
+void copyimage()
+{
+    //spits the same image out
+}
+
+//flip horizontal
+void flipHorizontal(int** v, int width, int height)
+{
+    for(int i=0; i < height; i++)
+    {
+        for( int j = 0; j < width/2; j++)
+        {
+            int temp = v[i][j]; //set
+            v[i][j] = v[i][width-j-1];
+            v[i][width-j-1] = temp;
+        }
+    }
+}
+
+//flip vertical
+void flipVeritcal (int** v, int width, int height)
+{
+    for(int i=0; i < height/2; i++)
+    {
+        for( int j = 0; j < width; j++)
+        {
+            int temp = v[i][j]; //set
+            v[i][j] = v[i][height-j-1];
+            v[i][height-j-1] = temp;
+        }
+    }
+}

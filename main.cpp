@@ -40,7 +40,9 @@ int main()
             delete[] original[i];  	            
         }	         
         delete original;
-    }else{
+    }
+    else
+    {
         cout << "Cannot open file " << fileName << endl;
     }
 }
