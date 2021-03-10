@@ -2,15 +2,15 @@
 #define PROJECT_1_IMAGEPROCESSING_H
 
 //copy image function
-void copyImage();
+void copyImage(int**, int, int);
 
 //flip horizontal function
-void flipHorizontal(int** v, width, height);
+void flipHorizontal(int**, int, int);
 
 //flip vertical function; vertical is spelled incorrectly on the pdf so it is copied from there
-void flipVeritcal(int** v, width, height);
+void flipVertical(int**, int, int);
 
 //median filter function
-void mediamFilter(int** v, width, height);
+void medianFilter(int**, int, int);
 
 #endif //PROJECT_1_IMAGEPROCESSING_H
