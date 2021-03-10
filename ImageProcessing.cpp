@@ -1,7 +1,4 @@
-#include "ImageProcessing.h"
-
-//copy image
-void copyimage()
+void copyImage(int** v, int width, int height)
 {
     //spits the same image out
 }
@@ -21,7 +18,7 @@ void flipHorizontal(int** v, int width, int height)
 }
 
 //flip vertical
-void flipVeritcal (int** v, int width, int height)
+void flipVertical(int** v, int width, int height)
 {
     for(int i=0; i < height/2; i++)
     {
@@ -32,4 +29,8 @@ void flipVeritcal (int** v, int width, int height)
             v[i][height-j-1] = temp;
         }
     }
+}
+
+void medianFilter(int**, int, int){
+
 }
