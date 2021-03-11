@@ -27,7 +27,7 @@ int main()
         //Open File set information
         if (openPGM(fileName)) {
             // Get Image Size Information
-            cout << "\nFile Successfully Opened!" << endl;
+            cout << "File Successfully Opened!" << endl;
             int width = getPGMWidth();
             int height = getPGMHeight();
 
@@ -52,10 +52,10 @@ int main()
             //get operation int from console
             cout << "[0] Copy Image\n[1] Flip Vertical\n[2] Flip Horizontal\n[3] Median Filter\nEnter Selection: ";
             cin >> choice;
-            cout << "\nEnter Save File Name: ";
+            cout << "Enter Save File Name: ";
             cin >> fileInput;
             outputName = "..\\processed_images\\" + fileInput;
-            cout << "\nPreforming Operation..." << endl;
+            cout << "Preforming Operation..." << endl;
 
             // choose operation based on choice
             switch(choice){
