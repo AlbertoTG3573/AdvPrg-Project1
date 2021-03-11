@@ -7,7 +7,7 @@ void copyImage(int**, int, int);
 //flip horizontal function
 void flipHorizontal(int**, int, int);
 
-//flip vertical function; vertical is spelled incorrectly on the pdf so it is copied from there
+//flip vertical function; vertical is spelled incorrectly on the pdf jsyk
 void flipVertical(int**, int, int);
 
 //median filter function
