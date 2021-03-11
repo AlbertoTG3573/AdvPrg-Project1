@@ -1,6 +1,7 @@
 #include <iostream>
 #include "PGM.h"
 #include "ImageProcessing.h"
+#include <bits/stdc++.h>
 
 using namespace std;
 // Group: Alberto & Emma
@@ -60,7 +61,7 @@ int main()
             // choose operation based on choice
             switch(choice){
                 case COPY:
-                    copyImage(original,width,height);
+                    copyImage(original,copy,width,height);
                     break;
                 case FLIPVERT:
                     flipVertical(original,width,height);
@@ -69,13 +70,13 @@ int main()
                     flipHorizontal(original,width,height);
                     break;
                 case MEDIAN:
-                    medianFilter(original,width,height);
+                    medianFilter(original,copy,width,height);
                     break;
             }
             cout << "Writing out the File...";
 
             // Write back out the same image
-            if (!writePGM(outputName, original)) {
+            if (!writePGM(outputName, copy)) {
                 cout << "\nFailed to write out file" << endl;
                 cont = false;
             }
