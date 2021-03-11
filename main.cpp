@@ -55,7 +55,7 @@ int main()
             cout << "Enter Save File Name: ";
             cin >> fileInput;
             outputName = "..\\processed_images\\" + fileInput;
-            cout << "Preforming Operation..." << endl;
+            cout << "Performing Operation..." << endl;
 
             // choose operation based on choice
             switch(choice){
@@ -86,7 +86,7 @@ int main()
             }
             delete original;
             // prompt for continue
-            cout << "Clean-up finished.\nPreform another operation [y/n]? ";
+            cout << "Clean-up finished.\nPerform another operation [y/n]? ";
 
             cin >> yesno;
             cout << endl;
