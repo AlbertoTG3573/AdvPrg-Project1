@@ -27,7 +27,7 @@ int main()
         //Open File set information
         if (openPGM(fileName)) {
             // Get Image Size Information
-            cout << "File Successfully Opened!" << endl;
+            cout << "\nFile Successfully Opened!" << endl;
             int width = getPGMWidth();
             int height = getPGMHeight();
 
@@ -89,6 +89,7 @@ int main()
             cout << "Clean-up finished.\nPreform another operation [y/n]? ";
 
             cin >> yesno;
+            cout << endl;
             // check if yesno is equal to no
             if ((yesno != 'n') && (yesno != 'N')){
                 cont = true;
