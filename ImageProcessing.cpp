@@ -3,7 +3,7 @@ void copyImage(int** v, int width, int height)
     //spits the same image out
 }
 
-//flip horizontal
+//flip vertical
 void flipHorizontal(int** v, int width, int height)
 {
     for(int i=0; i < height; i++)
@@ -25,8 +25,8 @@ void flipVertical(int** v, int width, int height)
         for( int j = 0; j < width; j++)
         {
             int temp = v[i][j]; //set
-            v[i][j] = v[i][height-j-1];
-            v[i][height-j-1] = temp;
+            v[i][j] = v[height-i-1][j];
+            v[height-i-1][j] = temp;
         }
     }
 }
