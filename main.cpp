@@ -27,7 +27,7 @@ int main()
         //Open File set information
         if (openPGM(fileName)) {
             // Get Image Size Information
-            cout << "\nFile Successfully Opened!" << endl;
+            cout << "File Successfully Opened!" << endl;
             int width = getPGMWidth();
             int height = getPGMHeight();
 
@@ -71,12 +71,15 @@ int main()
                 case MEDIAN:
                     medianFilter(original,width,height);
                     break;
+                default:
+                    cout << "Bad Operation selection!\n";
+                    cont = false;
             }
             cout << "Writing out the File...";
 
             // Write back out the same image
-            if (!writePGM(outputName, original)) {
-                cout << "\nFailed to write out file" << endl;
+            if (!writePGM(outputName, original) || !cont) {
+                cout << "\nFailed to write out file!" << endl;
                 cont = false;
             }
             cout << "Cleaning up now!\n";
